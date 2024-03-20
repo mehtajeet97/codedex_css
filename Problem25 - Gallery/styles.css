@@ -18,9 +18,11 @@
   
   #gallery-header {
     padding-bottom: 6px;
-    width: 80%;
+    width: 100%;
     margin: auto;
     text-align: left;
+    position: fixed;
+    z-index: 1;
   }
   
   #gallery-header > h1 {
@@ -31,5 +33,29 @@
     color: #5e96ff;
     font-weight: 800;
   }
-  
+
   /* Add code here */
+  #item-1 {
+    margin-top: 5%;
+  }
+
+  #item-2 {
+    position: relative;
+    bottom: 75px;
+    left: 5%;
+  }
+  #item-4 {
+    position: absolute;
+    top: 85%;
+    left:35%;
+  }
+  #item-5 {
+    display: block;
+    width:70%;
+  }
+  #item-7 {
+    position: sticky;
+    left: 40%;
+    bottom: 5px;
+    z-index: -1;
+  }
