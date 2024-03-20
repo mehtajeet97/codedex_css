@@ -1,0 +1,13 @@
+#outer{
+    width:500px;
+    height:500px;
+    background-color: aquamarine;
+}
+
+#inner{
+    width:400px;
+    height:400px;
+    background-image: url('https://img.freepik.com/free-photo/running-stallion-meadow-capturing-beauty-nature-generated-by-artificial-intelligence_25030-62873.jpg');
+    background-repeat: no-repeat;
+    background-size:contain;
+}
