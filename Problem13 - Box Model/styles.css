@@ -28,6 +28,7 @@
     width: 90%;
     background-color: rgb(169, 206, 221);
     text-align: center;
+    margin: auto;
   }
   
   .post-wrapper {
@@ -36,6 +37,8 @@
     /* Add `border-radius` here */
     border-radius: 5px;
     padding: 50px 50px 0px 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
   
   .post-img {
