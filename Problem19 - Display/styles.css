@@ -9,7 +9,7 @@
     background-color: #492b7c;
     color: #fff;
     border-bottom: 2px solid #313131;
-    position: fixed;
+    position: sticky;
     z-index: 1;
     width: 100%;
   }
@@ -34,10 +34,10 @@
     display: inline-block;
   }
   
-  main {
+  /* main {
     position: relative;
     top:103px;
-  }
+  } */
 
   section {
     min-height: 100vh;
@@ -50,6 +50,8 @@
   
   section > h2 {
     border-bottom: 0.5px solid grey;
+    position: sticky;
+    top: 103px;
   }
   
   #story-section {
