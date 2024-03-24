@@ -4,5 +4,12 @@
 }
 body {
     font-family: 'Middle Earth PERSONAL USE', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+header img {
+    width: 100%;
+    height: 30em;
 }
 
