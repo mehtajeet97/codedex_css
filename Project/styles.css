@@ -9,6 +9,8 @@ body {
     color: white;
 }
 
+/* Color : #f27d0c */
+
 .video-background {
     position: fixed;
     top: 0;
@@ -35,7 +37,7 @@ body {
   }
 
   .content-wrapper {
-    padding-top: 50vh; /* Adjust this value to control the distance from the top */
+    padding-top: 50vh; /* To control the distance from the top */
     padding-bottom: 50px;
   }
 
@@ -63,20 +65,66 @@ nav li {
 }
 
 #about {
-    margin: 10vh 5vw;
-    border: 3px solid #f27d0c;
+    position: relative;
+    z-index:1;
+    background-color: #000;
     border-radius: 17px;
-    padding: 30px;
+    margin: 20vh 5vw;
+    display: flex;
+    align-items: center;
+}
+
+.fire {
+	position: relative;
+    min-width: 100%;
+    border-radius: 17px;
+	background: linear-gradient(0deg, #000, #272727);
+}
+
+/* -.1em 0 .3em #fefcc9, .1em -.1em .3em #feec85, -.2em -.2em .4em #ffae34, .2em -.3em .3em #ec760c, -.2em -.4em .4em #cd4606, .1em -.5em .7em #973716, .1em -.7em .7em #451b0e */
+
+.fire:before, .fire:after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+    background: linear-gradient(45deg, #ec760c, #f27d0c, #cd4606,#973716, #451b0e, #ec760c, #f27d0c, #cd4606, #973716, #451b0e);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: burn 20s linear infinite;
+}
+
+.fire:after {
+	filter: blur(50px);
 }
 
 #about img {
-    border-radius: 50%;
-    width: 20vw;
-    height: 35vh;
+    border-radius: 17px;
+    max-width: 50%;
+    max-height: 27%;
+    float: left;
+}
+
+#about p {
+    text-align: center;
 }
 
 footer {
     text-align: center;
+}
+
+@keyframes burn {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
 }
 
 @media (max-width: 750px) {
