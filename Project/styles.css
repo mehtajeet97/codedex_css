@@ -16,15 +16,24 @@ a {
 
 header {
     text-align: center;
+    background-color: black;
 }
 
 #background-video {
     width: 100vw;
-    height: 21em;
+    height: 100vh;
     object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
   }
-  
 
+header img {
+    display: none;
+}
 
 header h1 {
     font-size: 47px;
@@ -43,6 +52,10 @@ nav li {
 
 @media (max-width: 750px) {
     #background-video { display: none; }
-    
+    header img {
+        display: block;
+        width: 100vw;
+        height: 21em;
+    }
   }
   
