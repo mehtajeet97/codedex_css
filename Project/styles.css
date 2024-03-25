@@ -75,6 +75,10 @@ nav li {
     height: 35vh;
 }
 
+footer {
+    text-align: center;
+}
+
 @media (max-width: 750px) {
     .video-background video { display: none; }
     .video-background img {
