@@ -111,6 +111,7 @@ nav li {
 }
 
 .slow-appear { 
+    padding-right: 17px;
     animation: fadeIn 10s;
 }
 
