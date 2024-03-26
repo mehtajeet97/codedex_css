@@ -50,8 +50,18 @@ header {
     padding: 10px;
 }
 
-.content-wrapper {
-    padding-top: 77vh; /* To control the distance from the top */
+.content-wrapper-1 {
+    padding-top: 87vh; /* To control the distance from the top */
+    padding-bottom: 50px;
+}
+
+.content-wrapper-2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.content-wrapper-3 {
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
@@ -74,7 +84,7 @@ nav li {
     z-index:1;
     background-color: #000;
     border-radius: 17px;
-    margin: 20vh 5vw;
+    margin: 11vh 5vw;
     display: flex;
     align-items: center;
 }
