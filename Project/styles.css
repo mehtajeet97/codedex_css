@@ -62,7 +62,6 @@ header {
 
 .content-wrapper-3 {
     padding-top: 50px;
-    padding-bottom: 50px;
 }
 
 .content {
@@ -137,6 +136,7 @@ nav li {
     text-align: center;
     padding: 20px;
     border: 2px solid #f27d0c;
+    box-shadow: 0 5px 15px rgb(205, 70, 6, 0.9);
 }
 
 .card img {
@@ -150,6 +150,47 @@ nav li {
 
 .card:hover > .hide {
     display: block;
+}
+
+#contact {
+    max-width: 800px;
+    margin: 50px auto;
+    border: 2px solid #f27d0c;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 10px 35px rgb(205, 70, 6, 1.0);
+}
+
+#contact h2 {
+    text-align: center;
+    color: #f27d0c;
+}
+
+#contact input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 17px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+#contact input[type="submit"] {
+    background-color: #000;
+    color: #f27d0c;
+    padding: 12px 20px;
+    border: 3px solid #f27d0c;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contact input[type="submit"]:hover {
+    background-color: #f27d0c;
+    color:#fff;
+    border: 3px solid #000;
+
 }
 
 footer {
